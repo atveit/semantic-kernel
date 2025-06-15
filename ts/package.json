@@ -1,0 +1,32 @@
+{
+  "name": "semantic-kernel-ts",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest",
+    "build": "pnpm -r run build",
+    "benchmark": "pnpm build && node benchmark.mjs",
+    "docs": "typedoc"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.2.0",
+    "eslint": "^8.0.0",
+    "license-checker": "^25.0.1",
+    "prettier": "^3.0.0",
+    "reflect-metadata": "^0.2.2",
+    "tsup": "^7.0.0",
+    "typedoc": "^0.28.5",
+    "typedoc-plugin-markdown": "^4.6.4",
+    "typescript": "^5.8.3",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.8.0"
+  }
+}

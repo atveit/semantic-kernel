@@ -1,0 +1,13 @@
+{
+  "entryPoints": [
+    "packages/abstractions/src/index.ts",
+    "packages/core/src/index.ts",
+    "packages/connectors-openai/src/index.ts",
+    "packages/connectors-hf/src/index.ts",
+    "packages/plugins-graph/src/index.ts",
+    "packages/plugins-websearch/src/index.ts"
+  ],
+  "out": "docs",
+  "plugin": ["typedoc-plugin-markdown"],
+  "tsconfig": "./tsconfig.json"
+}

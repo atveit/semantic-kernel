@@ -1,0 +1,17 @@
+# Installation Guide
+
+This workspace requires **Node.js 18+** and [pnpm](https://pnpm.io).
+
+1. Install dependencies for all packages:
+
+```bash
+pnpm install
+```
+
+2. Build the packages:
+
+```bash
+pnpm -r run build
+```
+
+After the build completes, the compiled ESM output can be used directly or executed with `pnpm benchmark` or any of the provided samples.
